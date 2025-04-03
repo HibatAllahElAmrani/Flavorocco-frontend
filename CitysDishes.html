@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavorocco</title>
+  <link rel="icon" href="icone.ico">
+  <link href="CitysDishes.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="top-page">
+    <header class="header">
+      <ul class="slogo">
+        <li><a href="Home.html"><img src="icone.ico" alt="logo du site" width="60px"></a></li>
+        <li><h2> Flavorocco </h2></li>
+        <li><h3> Taste Morocco Like a Local – Savor Every Bite! </h3></li>
+      </ul>
+    </header>
+  </section>
+  <br>
+  <section class="ourBody"> 
+  <section class="result-container">
+    <h2>Explore the aromatic dishes of : <span id="city-name"></span></h2>
+  </section>
+  <br>
+
+  <h2 class="Special"> <span class="star" style="color: gold;
+    font-size: 24px;">&#9733;</span> Special to Tangier </h2>
+  <br>
+  <div class="listOfDishes">
+    <div class="dish1">
+
+      <img src="PlatsTanger/Tagra.jpeg" alt="tanjia" width="200px" height="220px">
+
+      <div class="text">
+        <h2> Tagra </h2>
+        <h5 style="color:rgb(0, 0, 0); font-weight: 520 ;"> A traditional fish dish cooked in a clay pot with a rich tomato-based sauce and fragrant spices giving it a deep Mediterranean flavor.</h5>
+      </div>
+      <button onclick="openPopup()">Where to eat</button>
+    </div>
+
+    <div class="dish2">
+      <img src="PlatsTanger/Kaliente.jpg" alt="Kaliente" width="200px" height="220px">
+      <div class="text">
+        <h2> Kaliente </h2>
+        <h5 style="color:rgb(0, 0, 0); font-weight: 520 ;">A savory and soft chickpea flan, baked to perfection, commonly eaten as a warm, spiced snack in northern Morocco.</h5>
+      </div>
+      <button onclick="openPopup()">Where to eat</button>
+    </div>
+
+    <div class="dish3">
+      <img src="PlatsTanger/Bissara.jpeg" alt="Bissara" width="200px" height="220px">
+      <div class="text">
+        <h2> Bissara </h2>
+        <h5 style="color:rgb(0, 0, 0); font-weight: 520 ;"> A comforting and creamy fava bean or pea soup, typically enjoyed with a drizzle of olive oil, cumin, and fresh bread, during colder months.</h5>
+      </div>
+      <button onclick="openPopup()">Where to eat</button>
+    </div>
+    <div class="dish4">
+      <img src="PlatsTanger/f9assa.png" alt="Feqassa Tetouaniya" width="200px" height="220px">
+      <div class="text">
+        <h2> Feqassa </h2>
+        <h5 style="color:rgb(0, 0, 0); font-weight: 520 ;">A Moroccan take on the Spanish sandwich, often filled with tuna, eggs, olives, harissa, and fresh vegetables, making it a popular street food choice</h5>
+      </div>
+      <button onclick="openPopup()">Where to eat</button>
+    </div>
+    <div class="swipe-circle">
+    <div class="arrow"></div>
+  </div>
+</div>
+  <br>
+  <h2 class="Special" style="margin-left: 20px;"> Also in Tangier </h2>
+
+  <div class="listOfDishes">
+    <div class="dish12">
+
+      <img src="PlatsTanger/Harirra2.jpg" alt="Harrira" width="200px" height="220px">
+
+      <div class="text">
+        <h2> Harrira </h2>
+        <h5 style="color:rgb(0, 0, 0); font-weight: 520 ;"> Harrira is a Moroccan soupe made with tomatoes, lentils, chickpeas, meat and spices, often served during Ramadan.</h5>
+      </div>
+      <button style="background-color: #EFE3C2; border-style: solid; border-color: black; border-width: 1.9px; border-radius: 20px; color: black; font-weight: 500; height: 30px; "> Where to eat </button>
+    </div>
+
+    <div class="dish22">
+      <img src="PlatsTanger/Boulfaf.jpg" alt="Boulfaf" width="200px" height="220px">
+      <div class="text">
+        <h2> Boulfaf </h2>
+        <h5 style="color:rgb(0, 0, 0); font-weight: 520 ;">A dish made of grilled lamb liver wrapped in thin strips of caul fat. Often enjoyed during Eid, it has a smoky, rich taste with a hint of cumin and salt.</h5>
+      </div>
+      <button style="background-color: #EFE3C2; border-style: solid; border-color: black; border-width: 1.9px; border-radius: 20px; color: black; font-weight: 500; height: 30px; "> Where to eat </button>
+    </div>
+
+    <div class="dish32">
+      <img src="PlatsTanger/Sardines2.jpg" alt="Grilled Sardines" width="200px" height="220px">
+      <div class="text">
+        <h2> Grilled Sardines </h2>
+        <h5 style="color:rgb(0, 0, 0); font-weight: 520 ;">Grilled sardines marinated in chermoula, a Moroccan staple with bold flavors and a crispy char.</h5>
+      </div>
+      <button style="background-color: #EFE3C2; border-style: solid; border-color: black; border-width: 1.9px; border-radius: 20px; color: black; font-weight: 500; height: 30px; "> Where to eat </button>
+    </div>
+    <div class="dish42">
+      <img src="PlatsTanger/l7am.jpeg" alt="Lhem Bil Barqoq" width="200px" height="220px">
+      <div class="text">
+        <h2> Lhem Bil Barqoq </h2>
+        <h5 style="color:rgb(0, 0, 0); font-weight: 520 ;">A sweet-savory stew of tender beef or lamb with prunes, almonds, cinnamon, and saffron.</h5>
+      </div>
+      <button style="background-color: #EFE3C2; border-style: solid; border-color: black; border-width: 1.9px; border-radius: 20px; color: black; font-weight: 500; height: 30px; "> Where to eat </button>
+    </div>
+    <div class="swipe-circle">
+      <div class="arrow"></div>
+    </div>
+  </div>
+  <br>
+  </section>
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <h3>Select your option</h3>
+    <label><input type="radio" name="location" id="myArea" onclick="toggleCityInput()">The city itself</label><br>
+    <label><input type="radio" name="location" id="other" onclick="toggleCityInput()"> Other</label><br>
+    <input type="text" id="cityInput" class="hidden" placeholder="Enter city name">
+    <br><br>
+    <button onclick="generateRestaurant()">Generate Restaurant</button>
+    <button onclick="closePopup()">Close</button>
+</div>
+<script>
+  function openPopup() {
+      document.getElementById("popup").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+  }
+
+  function closePopup() {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+  }
+
+  function toggleCityInput() {
+      var otherChecked = document.getElementById("other").checked;
+      document.getElementById("cityInput").classList.toggle("hidden", !otherChecked);
+  }
+
+  function generateRestaurant() {
+      if (document.getElementById("myArea").checked) {
+          window.location.href = "restaurants.html?area=my";
+      } else if (document.getElementById("other").checked) {
+          var city = document.getElementById("cityInput").value;
+          if (city.trim() === "") {
+              alert("Please enter a city name.");
+          } else {
+              window.location.href = "restaurants.html?area=other&city=" + encodeURIComponent(city);
+          }
+      } else {
+          alert("Please select an option.");
+      }
+  }
+</script>
+
+  <footer>
+    <div class="footer-container">
+      
+      <!-- À propos -->
+      <div class="footer-column">
+        <h3>À propos de Flavorocco</h3>
+        <ul>
+          <li><a href="#">Notre mission</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Sécurité & Confidentialité</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Explorer -->
+      <div class="footer-column">
+        <h3>Explorer</h3>
+        <ul>
+          <li><a href="#">Plats populaires</a></li>
+          <li><a href="#">Meilleures villes</a></li>
+          <li><a href="#">Histoire & culture</a></li>
+          <li><a href="#">Avis des voyageurs</a></li>
+        </ul>
+      </div>
+  
+      <!-- Aide & Services -->
+      <div class="footer-column">
+        <h3>Aide & Services</h3>
+        <ul>
+          <li><a href="#">Assistance</a></li>
+          <li><a href="#">Proposer un plat</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+  
+      <!-- Réseaux Sociaux -->
+      <div class="footer-column">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Bas de page -->
+    <div class="footer-bottom">
+      
+      <div class="legal-links">
+        <a href="#">Conditions d'utilisation</a>
+        <a href="#">Confidentialité & Cookies</a>
+        <a href="#">Plan du site</a>
+      </div>
+      
+      <div class="settings">
+        <select>
+          <option>€ EUR</option>
+          <option>$ USD</option>
+          <option>£ GBP</option>
+        </select>
+        <select>
+          <option>🇫🇷 France</option>
+          <option>🇬🇧 English</option>
+          <option>🇪🇸 Español</option>
+        </select>
+      </div>
+  
+    </div>
+  </footer>
+ 
+  
+  <script>
+    // Function to extract city from URL and animate typing
+    function getCityAndAnimate() {
+      const params = new URLSearchParams(window.location.search);
+      const city = params.get("city") || "Tangier";
+      
+      let cityNameElement = document.getElementById("city-name");
+      let i = 0;
+      
+      function typeWriter() {
+        if (i < city.length) {
+          cityNameElement.innerHTML += city.charAt(i);
+          i++;
+          setTimeout(typeWriter, 150); // Adjust speed
+        }
+      }
+      
+      typeWriter();
+    }
+    
+    window.onload = getCityAndAnimate;
+  </script>
+</body>
+</html>

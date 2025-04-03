@@ -1,0 +1,450 @@
+
+header.header {
+  position: relative; 
+  height: 150px;
+  margin: 0px 0px;
+}
+
+header.header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpeg');
+  background-position: center;
+  margin-top: 0px;
+  filter: blur(1.6px); 
+  z-index: -1; /* Assure que l'image de fond floue soit derrière le contenu */
+}
+
+header.header img{
+  margin-left: 5px;
+  margin-top: 42px;
+  border-style:hidden;
+  border-radius: 100px;
+}
+header.header h2{
+  margin-right: 200px;
+  font-family: 'Italianno', cursive;
+  color: #123524;
+  font-size: 50px;
+  margin-top: 47px;
+}
+header.header h3{
+  margin-right: 320px;
+  font-family: 'Italianno', cursive;
+  color: #123524;
+  font-size: 40px;
+  margin-top: 53px;
+}
+.slogo{
+  display:flex ;
+  justify-content: space-around;
+  list-style: none;
+}
+
+
+input[type="search"]{ 
+  border-style: hidden;
+  border-radius: 30px;
+  padding-left: 1%;
+  width: 700px;  /* Largeur */
+  height: 45px; 
+  background-color:#f5f5f5 ; /* Hauteur */
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30%;
+  width: 500px;
+  background: #f5f5f5; /* Gris clair */
+  border-radius: 35px;
+  padding: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+.search-container i {
+  margin: 15px 15px;
+  color: #070707;
+}
+.search-button {
+  background: #3E7B27; /* Vert clair */
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  height: 40px;
+  margin: 3px 3px;
+  transition: background 0.3s ease;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.search-button:hover {
+  background: #5a9146; /* Un peu plus foncé */
+}
+.ourBody {
+  margin: 20px 80px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.plats_sucres {
+  display: flex;
+  justify-content: space-between;
+}
+.plat1 {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 220px;
+  height : 351px;
+  overflow: hidden; /* Ensures the blur doesn't overflow outside */
+}
+
+.plat1::before {
+  content: "";  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('plats_sucres/chabakia.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Adjust the blur intensity */
+  z-index: -1; /* Puts the blurred image behind the content */
+}
+
+.plat2 {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 220px;
+  height: 350px;
+  overflow: hidden; /* Ensures the blur doesn't overflow outside */
+}
+
+.plat2::before {
+  content: "";  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('plats_sucres/briwat.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Adjust the blur intensity */
+  z-index: -1; /* Puts the blurred image behind the content */
+}
+
+.plat3 {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 220px;
+  height: 350px;
+  overflow: hidden; /* Ensures the blur doesn't overflow outside */
+}
+
+.plat3::before {
+  content: "";  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('plats_sucres/ke3b_ghazal.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Adjust the blur intensity */
+  z-index: -1; /* Puts the blurred image behind the content */
+}
+.plat4 {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 220px;
+  height: 350px;
+  overflow: hidden; /* Ensures the blur doesn't overflow outside */
+}
+
+.plat4::before {
+  content: "";  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('plats_sucres/Bastilla2.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Adjust the blur intensity */
+  z-index: -1; /* Puts the blurred image behind the content */
+}
+
+.text{
+  background-color: #f5f5f562;
+  border-style: hidden;
+  padding-left: 5px;
+  margin-right:20px ;
+}
+
+.swipe-circle {
+  width: 60px;
+  height: 60px;
+  background-color:#5a9146; /* Circle color */
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 140px;
+}
+
+.swipe-circle:hover {
+  background-color:#426e31; /* Darker on hover */
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  border: solid black;
+  border-width: 4px 4px 0 0;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+.plats_sales {
+  display: flex;
+  justify-content: space-between;
+}
+.plat12 {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 220px;
+  height : 351px;
+  overflow: hidden; /* Ensures the blur doesn't overflow outside */
+}
+
+.plat12::before {
+  content: "";  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('plats_salés/Tanjia Marrakchia.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Adjust the blur intensity */
+  z-index: -1; /* Puts the blurred image behind the content */
+}
+
+.plat22 {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 220px;
+  height: 350px;
+  overflow: hidden; /* Ensures the blur doesn't overflow outside */
+}
+
+.plat22::before {
+  content: "";  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('plats_salés/tajine.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Adjust the blur intensity */
+  z-index: -1; /* Puts the blurred image behind the content */
+}
+
+.plat32 {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 220px;
+  height: 350px;
+  overflow: hidden; /* Ensures the blur doesn't overflow outside */
+}
+
+.plat32::before {
+  content: "";  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('plats_salés/couscous.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Adjust the blur intensity */
+  z-index: -1; /* Puts the blurred image behind the content */
+}
+.plat42 {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 220px;
+  height: 350px;
+  overflow: hidden; /* Ensures the blur doesn't overflow outside */
+}
+
+.plat42::before {
+  content: "";  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('plats_salés/rfissa.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Adjust the blur intensity */
+  z-index: -1; /* Puts the blurred image behind the content */
+}
+
+.text{
+  background-color: #f5f5f562;
+  border-style: hidden;
+  padding-left: 5px;
+  margin-right:20px ;
+}
+
+.swipe-circle {
+  width: 60px;
+  height: 60px;
+  background-color:#5a9146; /* Circle color */
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 140px;
+}
+
+.swipe-circle:hover {
+  background-color:#426e31; /* Darker on hover */
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  border: solid black;
+  border-width: 4px 4px 0 0;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+footer {
+  background-color: #f8f8f8;
+  padding: 30px 80px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  width: 25%;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.footer-bottom .legal-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-bottom .legal-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+}
+
+.footer-bottom .legal-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom .settings {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-bottom select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #3E7B27;
+}
